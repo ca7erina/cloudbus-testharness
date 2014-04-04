@@ -1,0 +1,639 @@
+<html>
+<head>
+<title>Cloud Bus Website Validation Test Result</title>
+<script type="text/javascript">
+function fixStatus( ){
+    var rows = document.getElementsByTagName("tr");
+    for ( var i = 0; i < rows.length; ++i ){
+        var row = rows[i];
+        var tds = row.getElementsByTagName("td");
+        for ( var id = 0; id < tds.length; ++id ){
+            var td = tds[id];
+            var val = td.innerHTML.toUpperCase();
+			if (val=='PASS'){
+				row.style.color = "green"; 
+                break;
+			}
+			if (val=='FAIL'){
+				row.style.color = "red"; 
+                break;
+			}
+        }            
+    } 
+}
+window.onload = fixStatus;
+</script>
+</head>
+<body>
+<h1>Cloud Bus Website Validation Test Result</h1>
+<table border="1" cellspacing="1" cellpadding="8" style="border: #000000; border-style: solid; border-width: 1px">
+	<tr>
+		<td align="right" style="BACKGROUND-COLOR:#2E2E8A;COLOR:white;font-weight:bold;" colspan="1">Project Name: </td>
+		<td colspan="3">Cloud Bus Website</td>
+	</tr>
+	<tr>
+		<td align="right" style="BACKGROUND-COLOR:#2E2E8A;COLOR:white;font-weight:bold;">Test Date: </td>
+		<td>2013-11-21</td>
+		<td align="right" style="BACKGROUND-COLOR:#2E2E8A;COLOR:white;font-weight:bold;">Duration: </td>
+		<td>21 min, 12 sec</td>
+	</tr>
+	<tr>
+		<td align="right" style="BACKGROUND-COLOR:#2E2E8A;COLOR:white;font-weight:bold;">Passed: </td>
+		<td style="color:green;font-weight:bold;">59</td>
+		<td align="right" style="BACKGROUND-COLOR:#2E2E8A;COLOR:white;font-weight:bold;">Failed: </td>
+		<td style="color:red;font-weight:bold;">4</td>
+	</tr>
+	<tr>
+		<td align="right" style="BACKGROUND-COLOR:#2E2E8A;COLOR:white;font-weight:bold;">Total: </td>
+		<td width="100px">63</td>
+		<td align="right" style="BACKGROUND-COLOR:#2E2E8A;COLOR:white;font-weight:bold;">Pass rate: </td>
+		<td width="100px">93.65%</td>
+	</tr>
+	<tr>
+		<td align="right" style="BACKGROUND-COLOR:#2E2E8A;COLOR:white;font-weight:bold;" colspan="1">Test Environment: </td>
+		<td colspan="3">Browser: firefox-25.0.1<br/>OS: Windows 7 version-6.1 amd64<br/>TimeZone:China Standard Time<br/>IP: 192.168.67.46<br/>HostName: XiaoXue_Chen-LT<br/></td>
+	</tr>
+	<tr>
+		<td align="right" style="BACKGROUND-COLOR:#2E2E8A;COLOR:white;font-weight:bold;" colspan="1">Summary: </td>
+		<td colspan="3"></td>
+	</tr>
+</table>
+<br />
+<table width="90%" border="1" cellspacing="1" cellpadding="8" style="table-layout:fixed;border: #000000; border-style: solid; border-width: 1px ">
+<tr style="BACKGROUND-COLOR:#2E2E8A;COLOR:white;font-weight:bold;">
+<td width="5%">No.</td>
+<td width="11%">TestLinkId</td>
+<td width="15%">Suite</td>
+<td> Summary </td>
+<td width="10%"> Result</td>
+<td width="8%"> TimeStamp</td>
+<td width="10%"> Comments</td>
+</tr>
+<!--<tr><td>$CaseID</td><td>$TaskName</td><td>$TestTime</td><td>$TestSummary</td><td style="font-weight:bold;"><a href="$href"><font color="$color">$TestResult</font></a></td><td>$Comments</td></tr>-->   <tr>
+   <tr>
+    <td>1</td>
+    <td>CB44</td>
+    <td>Validate Sign in dialog</td>
+    <td>Check "Forget your password" link</td>
+    <td>fail</td>
+    <td>10:33:39</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>2</td>
+    <td>CB51</td>
+    <td>Validate Sign in dialog</td>
+    <td>Login with invalid email adress</td>
+    <td>pass</td>
+    <td>10:33:45</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>3</td>
+    <td>CB52</td>
+    <td>Validate Sign in dialog</td>
+    <td>Login with valid email and password</td>
+    <td>pass</td>
+    <td>10:33:54</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>4</td>
+    <td>CB63</td>
+    <td>Validate Register dialog</td>
+    <td>Check Text on Register dialog</td>
+    <td>pass</td>
+    <td>10:34:14</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>5</td>
+    <td>CB53</td>
+    <td>Validate Register dialog</td>
+    <td>Check "why register" Link </td>
+    <td>pass</td>
+    <td>10:34:18</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>6</td>
+    <td>CB64</td>
+    <td>Validate Register dialog</td>
+    <td>Check "continue" button</td>
+    <td>fail</td>
+    <td>10:34:40</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>7</td>
+    <td>CB32</td>
+    <td>Validate Other Pages</td>
+    <td>Validate LearnPage</td>
+    <td>pass</td>
+    <td>10:34:53</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>8</td>
+    <td>CB25</td>
+    <td>Validate Home Page as Guest</td>
+    <td>Check "Key Features" video</td>
+    <td>pass</td>
+    <td>10:35:59</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>9</td>
+    <td>CB38</td>
+    <td>Validate Home Page as Guest</td>
+    <td>Check Copy Right on  Home Page</td>
+    <td>pass</td>
+    <td>10:36:43</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>10</td>
+    <td>CB40</td>
+    <td>Validate Home Page as Guest</td>
+    <td>Check "why cloud bus" video</td>
+    <td>pass</td>
+    <td>10:37:33</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>11</td>
+    <td>CB42</td>
+    <td>Validate Home Page as Guest</td>
+    <td>Check "cloud bus end to end" video</td>
+    <td>pass</td>
+    <td>10:38:23</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>12</td>
+    <td>CB43</td>
+    <td>Validate Home Page as Guest</td>
+    <td>Check banner image</td>
+    <td>pass</td>
+    <td>10:38:51</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>13</td>
+    <td>CB45</td>
+    <td>Validate Home Page as Guest</td>
+    <td>Check "integrate" tab at home page</td>
+    <td>pass</td>
+    <td>10:39:21</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>14</td>
+    <td>CB46</td>
+    <td>Validate Home Page as Guest</td>
+    <td>Check "Sign in" link on home page</td>
+    <td>pass</td>
+    <td>10:39:44</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>15</td>
+    <td>CB47</td>
+    <td>Validate Home Page as Guest</td>
+    <td>Check "contact" link on home page</td>
+    <td>pass</td>
+    <td>10:40:10</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>16</td>
+    <td>CB48</td>
+    <td>Validate Home Page as Guest</td>
+    <td>Check "Register" button on home page</td>
+    <td>pass</td>
+    <td>10:40:31</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>17</td>
+    <td>CB49</td>
+    <td>Validate Home Page as Guest</td>
+    <td>Check "learn" tab at home page</td>
+    <td>pass</td>
+    <td>10:40:54</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>18</td>
+    <td>CB50</td>
+    <td>Validate Home Page as Guest</td>
+    <td>Check "pricing" tab on home page</td>
+    <td>pass</td>
+    <td>10:41:21</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>19</td>
+    <td>CB169</td>
+    <td>Validate Home Page as Guest</td>
+    <td>Check "Home" tab on home page</td>
+    <td>pass</td>
+    <td>10:41:52</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>20</td>
+    <td>CB126</td>
+    <td>Validate WhyRegister Page</td>
+    <td>Check why register page existence</td>
+    <td>pass</td>
+    <td>10:42:17</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>21</td>
+    <td>CB127</td>
+    <td>Validate WhyRegister Page</td>
+    <td>Check video on the page</td>
+    <td>pass</td>
+    <td>10:42:45</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>22</td>
+    <td>CB125</td>
+    <td>(Delay)Validate Contact Page as Guest</td>
+    <td>Check "reset" button</td>
+    <td>pass</td>
+    <td>10:43:09</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>23</td>
+    <td>CB123</td>
+    <td>(Delay)Validate Contact Page as Guest</td>
+    <td>Submit message with invalid email adress</td>
+    <td>pass</td>
+    <td>10:43:13</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>24</td>
+    <td>CB56</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check  "learn more" button about Facebook quick connection </td>
+    <td>pass</td>
+    <td>10:43:44</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>25</td>
+    <td>CB60</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check "learn more" button about Dropbox quick connection </td>
+    <td>pass</td>
+    <td>10:43:51</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>26</td>
+    <td>CB55</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check "learn more" button about Evernote quick connection.</td>
+    <td>pass</td>
+    <td>10:43:56</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>27</td>
+    <td>CB57</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check  "learn more" button about Foursquare quick connection</td>
+    <td>pass</td>
+    <td>10:44:05</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>28</td>
+    <td>CB61</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check "learn more" button about Salesforce</td>
+    <td>pass</td>
+    <td>10:44:41</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>29</td>
+    <td>CB67</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check "learn more" button about  tibber</td>
+    <td>pass</td>
+    <td>10:45:15</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>30</td>
+    <td>CB54</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check "learn more" button about Get Satisfaction quick connection </td>
+    <td>pass</td>
+    <td>10:45:26</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>31</td>
+    <td>CB41</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check "learn more" button about Yammer quick connection </td>
+    <td>pass</td>
+    <td>10:45:32</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>32</td>
+    <td>CB66</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check "learn more" button about MailChimp quick connection </td>
+    <td>pass</td>
+    <td>10:45:38</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>33</td>
+    <td>CB65</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check "learn more" button about Instagram quick connection </td>
+    <td>pass</td>
+    <td>10:45:45</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>34</td>
+    <td>CB120</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check "learn more" button about Amazon SQS quick connection</td>
+    <td>pass</td>
+    <td>10:45:53</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>35</td>
+    <td>CB121</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check "learn more" button about Flickr quick connection</td>
+    <td>pass</td>
+    <td>10:45:58</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>36</td>
+    <td>CB122</td>
+    <td>Validate Intergrate Page as Signed in User</td>
+    <td>Check "learn more" button about Jigsaw quick connection</td>
+    <td>fail</td>
+    <td>10:46:01</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>37</td>
+    <td>CB137</td>
+    <td>Validate Account Dialog as Signed in User</td>
+    <td>Check "Manage Account" link</td>
+    <td>pass</td>
+    <td>10:46:41</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>38</td>
+    <td>CB138</td>
+    <td>Validate Account Dialog as Signed in User</td>
+    <td>Check "Sign out" link</td>
+    <td>pass</td>
+    <td>10:46:47</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>39</td>
+    <td>CB33</td>
+    <td>Validate Account Info Page as Signed in User</td>
+    <td>Validate AccountInfoPage_RegUser</td>
+    <td>pass</td>
+    <td>10:47:34</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>40</td>
+    <td>CB128</td>
+    <td>Validate Home Page as Signed in User</td>
+    <td>Check "account name" link</td>
+    <td>pass</td>
+    <td>10:48:07</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>41</td>
+    <td>CB129</td>
+    <td>Validate Home Page as Signed in User</td>
+    <td>Check "develop" tab after user sign in.</td>
+    <td>pass</td>
+    <td>10:48:12</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>42</td>
+    <td>CB130</td>
+    <td>Validate Home Page as Signed in User</td>
+    <td>Check "deploy" tab after user sign in</td>
+    <td>pass</td>
+    <td>10:48:36</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>43</td>
+    <td>CB132</td>
+    <td>Validate Home Page as Signed in User</td>
+    <td>Check "integrate" image after user sign in.</td>
+    <td>pass</td>
+    <td>10:48:40</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>44</td>
+    <td>CB133</td>
+    <td>Validate Home Page as Signed in User</td>
+    <td>Check "Develop" image after user sign in.</td>
+    <td>pass</td>
+    <td>10:48:44</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>45</td>
+    <td>CB134</td>
+    <td>Validate Home Page as Signed in User</td>
+    <td>Check "Deploy" image after user sign in.</td>
+    <td>pass</td>
+    <td>10:49:08</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>46</td>
+    <td>CB158</td>
+    <td>Validate Develop Page as Signed in User</td>
+    <td>Check "video" play</td>
+    <td>pass</td>
+    <td>10:50:02</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>47</td>
+    <td>CB159</td>
+    <td>Validate Develop Page as Signed in User</td>
+    <td>Check designer download</td>
+    <td>pass</td>
+    <td>10:50:12</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>48</td>
+    <td>CB160</td>
+    <td>Validate Develop Page as Signed in User</td>
+    <td>Check license Agreement link</td>
+    <td>pass</td>
+    <td>10:50:20</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>49</td>
+    <td>CB36</td>
+    <td>Validate On Premises Package Page as Signed in User</td>
+    <td>Validate  OnPremisesPackagePage_RegUser</td>
+    <td>pass</td>
+    <td>10:51:05</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>50</td>
+    <td>CB30</td>
+    <td>Validate Other Pages</td>
+    <td>Validate PricingPage</td>
+    <td>pass</td>
+    <td>10:52:01</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>51</td>
+    <td>CB139</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check "learn more" button about  tibber</td>
+    <td>pass</td>
+    <td>10:52:46</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>52</td>
+    <td>CB141</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check "learn more" button about Salesforce</td>
+    <td>pass</td>
+    <td>10:53:17</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>53</td>
+    <td>CB142</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check  "learn more" button about Foursquare quick connection</td>
+    <td>pass</td>
+    <td>10:53:41</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>54</td>
+    <td>CB144</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check "learn more" button about Evernote quick connection.</td>
+    <td>pass</td>
+    <td>10:53:43</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>55</td>
+    <td>CB143</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check "learn more" button about Dropbox quick connection</td>
+    <td>pass</td>
+    <td>10:53:46</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>56</td>
+    <td>CB145</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check  "learn more" button about Facebook quick connection</td>
+    <td>pass</td>
+    <td>10:53:49</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>57</td>
+    <td>CB146</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check "learn more" button about Get Satisfaction quick connection</td>
+    <td>pass</td>
+    <td>10:53:52</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>58</td>
+    <td>CB147</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check "learn more" button about Yammer quick connection</td>
+    <td>pass</td>
+    <td>10:53:55</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>59</td>
+    <td>CB148</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check "learn more" button about MailChimp quick connection</td>
+    <td>pass</td>
+    <td>10:53:57</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>60</td>
+    <td>CB149</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check "learn more" button about Instagram quick connection</td>
+    <td>pass</td>
+    <td>10:54:02</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>61</td>
+    <td>CB151</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check "learn more" button about Amazon SQS quick connection</td>
+    <td>pass</td>
+    <td>10:54:05</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>62</td>
+    <td>CB152</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check "learn more" button about Flickr quick connection</td>
+    <td>pass</td>
+    <td>10:54:07</td>
+    <td>none</td>
+   </tr>
+   <tr>
+    <td>63</td>
+    <td>CB153</td>
+    <td>Validate Intergrate Page as Guest</td>
+    <td>Check "learn more" button about Jigsaw quick connection</td>
+    <td>fail</td>
+    <td>10:54:09</td>
+    <td>none</td>
+   </tr>
