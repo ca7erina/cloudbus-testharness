@@ -1,3 +1,5 @@
+Automation-selenium
+==============================
 1.Project Background:
 A web UI test program for testing the website http://cloudbus-stg.tibco.com/ (includes 60 checkpoints). And It also includes the following functions:
 	reading xml test cases,
@@ -43,4 +45,6 @@ util:	//utilities used in the test project
 		EnvDetector.java	//for collecting the test environment data
 		ReportUtil.java		//for creating the test result html
 		TestCaseLoader.java		//for reading the xml test cases which exported from TestLink.
-	
+
+3. Screenshot:
+    ![screenshot](img/screenshot.png?raw=true)
