@@ -45,4 +45,4 @@ util:	//utilities used in the test project
 		TestCaseLoader.java		//for reading the xml test cases which exported from TestLink.
 
 3. Screenshot:
- ![screenshot](screenshot.png?raw=true)
+ ![screenshot](img/screenshot.png?raw=true)
